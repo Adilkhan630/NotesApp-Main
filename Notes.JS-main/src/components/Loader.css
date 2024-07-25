@@ -1,0 +1,55 @@
+/* src/components/Loader.css */
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  z-index: 9999;
+}
+
+.loader-content {
+  text-align: center;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.pencil-icon {
+  margin-right: 10px;
+}
+
+.progress-bar {
+  width: 200px;
+  height: 4px;
+  background-color: #f0f0f0;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress {
+  width: 60%;
+  height: 100%;
+  background-color: #333;
+  animation: loading 2s infinite;
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 60%;
+  }
+  100% {
+    width: 100%;
+  }
+}
